@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 :root{
-    --primary-color: #ffe608;
+     --primary-color: #ffe608;
     --secondary-color: #000;
     --accent1-color: #ff08d6;
     --lightbg-color: #fffef7;
@@ -76,6 +74,9 @@ main {
     max-width: 1200px;
     margin: 3rem auto;
     padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
 }
 
 h1 {
@@ -84,18 +85,10 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: var(--secondary-color);
+    grid-column: 1 / -1;
 }
 
 /* Card Grid Layout */
-main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
-}
-
-main h1 {
-    grid-column: 1 / -1;
-}
 
 .card {
     background: var(--white);
