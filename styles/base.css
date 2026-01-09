@@ -207,7 +207,7 @@ h1 {
 }
 
 .card ul li a:hover {
-    color: #1a3a4d;
+    color: var(--accent1-color);
     text-decoration: underline;
 }
 
