@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Clement Nii Odai Afotey">
+    <meta name="description" content="Temple Album page for WDD 131 – Dynamic Web Fundamentals by Clement Nii Odai Afotey. A collection of images showcasing various temples.">
+    <title>WDD 131 – Temples Album – Clement Nii Odai Afotey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Temple Album</h2>
+        <button id="hamburger" aria-label="Toggle menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div id="temple-grid">
+            <figure>
+                <img src="images/arequipa_peru_temple.jpeg" alt="Arequipa, Peru Temple" loading="lazy">
+                <figcaption>Arequipa, Peru</figcaption>
+            </figure>
+            <figure>
+                <img src="images/abidjan_ivory_coast_temple.jpeg" alt="Abidjan, Ivory Coast Temple" loading="lazy">
+                <figcaption>Abidjan, Ivory Coast</figcaption>
+            </figure>
+            <figure>
+                <img src="images/accra_ghana_temple.jpeg" alt="Accra Ghana Temple" loading="lazy">
+                <figcaption>Accra Ghana</figcaption>
+            </figure>
+            <figure>
+                <img src="images/adelaide_australia_temple_lds.jpeg" alt="Adelaide Australia Temple" loading="lazy">
+                <figcaption>Adelaide Australia</figcaption>
+            </figure>
+            <figure>
+                <img src="images/atlanta_temple_lds.jpeg" alt="Atlanta Georgia Temple" loading="lazy">
+                <figcaption>Atlanta Georgia</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bentonville_arkansas_temple_exterior.jpeg" alt="Bentonville Arkansas Temple" loading="lazy">
+                <figcaption>Bentonville Arkansas</figcaption>
+            </figure>
+            <figure>
+                <img src="images/birmingham_temple_lds.jpeg" alt="Birmingham England Temple" loading="lazy">
+                <figcaption>Birmingham England</figcaption>
+            </figure>
+            <figure>
+                <img src="images/brasilia_brazil_temple_exterior.jpeg" alt="Brasilia Brazil Temple" loading="lazy">
+                <figcaption>Brasilia Brazil</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cedar_city_temple_rendering.jpeg" alt="Cedar City Utah Temple" loading="lazy">
+                <figcaption>Cedar City Utah</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🌺 Clement Nii Odai Afotey 🌺 Ghana</p>
+        <p id="lastModified"></p>
+    </footer>   
+</body>
+</html>

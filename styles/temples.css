@@ -1,0 +1,166 @@
+:root{
+    --primary-color: #ffe0c2;
+    --secondary-color: #393028;
+    --accent-color: #191919;
+    --bg-color: #111111;
+    --fg-color: #eeeeee;
+    --border-dark: #2a2a2a;
+    --white: #fff;
+    --heading-font: "Archivo Black", "Inter", sans-serif;
+    --body-font: "Inter", "Arial", sans-serif;
+}
+
+/* Mobile First CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header h2 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Hamburger Button */
+#hamburger {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+#hamburger:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation Styles */
+nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--accent-color);
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    border-top: 1px solid var(--border-dark);
+}
+
+nav ul li a {
+    display: block;
+    color: var(--fg-color);
+    text-decoration: none;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--fg-color);
+}
+
+/* Grid Layout - Mobile (1 column) */
+#temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Figure Styles */
+figure {
+    background: var(--accent-color);
+    border-radius: .4rem;
+    border: 1px solid var(--border-dark);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+figcaption {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+    color: var(--fg-color);
+}
