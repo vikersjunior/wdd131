@@ -1,0 +1,223 @@
+:root {
+    --primary: #ff7e5f;
+    --accent: #feb47b;
+    --background: #fff9f5;
+    --white: #FFFFFF;
+    --text-dark: #3d3436;
+    --text-medium: #78716C;
+    --card-background: #FFFFFF;
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 1.5rem;
+    --spacing-xlarge: 2rem;
+    --font-heading: "Archivo Black", sans-serif;
+    --font-body: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: var(--spacing-medium) var(--spacing-large);
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+main {
+    width: 100%;
+    padding: 0;
+    flex: 1;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    display: block;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cards-container {
+    padding: var(--spacing-medium);
+}
+
+.card {
+    background-color: var(--card-background);
+    margin-bottom: var(--spacing-large);
+    box-shadow: 0 4px 12px rgba(36, 23, 5, 0.051);
+    overflow: hidden;
+}
+
+.card h2 {
+    font-family: var(--font-heading);
+    background-color: var(--accent);
+    color: var(--white);
+    padding: var(--spacing-medium) var(--spacing-large);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.data-content,
+.weather-content {
+    padding: var(--spacing-large);
+}
+
+.data-content p,
+.weather-content p {
+    padding: var(--spacing-small) 0;
+    font-size: 1rem;
+    color: var(--text-medium);
+}
+
+.data-content p strong,
+.weather-content p strong {
+    color: var(--text-dark);
+    font-weight: 600;
+    display: inline-block;
+    min-width: 120px;
+}
+
+.weather-icon-mobile {
+    text-align: center;
+    padding: var(--spacing-large) 0;
+}
+
+.svg-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-section h2::after {
+    display: none;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: var(--spacing-large);
+    margin-top: var(--spacing-small);
+    flex-shrink: 0;
+}
+
+footer p {
+    margin: var(--spacing-small) 0;
+    font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.3rem;
+        padding: var(--spacing-small) 0;
+    }
+
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-container {
+        position: relative;
+        flex: 1;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .hero-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .cards-container {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: var(--spacing-xlarge);
+        gap: var(--spacing-large);
+        width: 100%;
+    }
+
+    .card {
+        flex: 0 0 340px;
+        margin-bottom: 0;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    }
+
+    .data-section {
+        margin-top: 80px;
+    }
+
+    .weather-section {
+        align-self: flex-end;
+        margin-bottom: 40px;
+    }
+
+    .card h2 {
+        font-size: 1.75rem;
+        padding: var(--spacing-medium);
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather-section h2::after {
+        content: '⛅';
+        display: inline-block;
+        margin-left: var(--spacing-medium);
+        font-size: 1.75rem;
+    }
+
+    footer {
+        padding: var(--spacing-large);
+        flex-shrink: 0;
+        margin-top: 0;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}

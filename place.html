@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Clement Nii Odai Afotey">
+    <meta name="description" content="Discover the beauty and charm of Kyoto, Japan - a timeless city of temples, gardens, and rich cultural heritage. Created for WDD 131 – Dynamic Web Fundamentals.">
+    <title>WDD 131 – Place Visited – Clement Nii Odai Afotey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Kyoto, Japan</h1>
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <picture class="hero-image">
+                <source srcset="images/kyoto-large.webp" media="(min-width: 768px)">
+                <img src="images/kyoto-small.webp" alt="Beautiful view of Kyoto temples and traditional architecture" loading="lazy">
+            </picture>
+
+            <div class="cards-container">
+                <section class="data-section card">
+                    <h2>Data</h2>
+                    <div class="data-content">
+                        <p><strong>Area:</strong> 827.83 km²</p>
+                        <p><strong>Population:</strong> 1.46 million</p>
+                        <p><strong>Capital:</strong> Kyoto City</p>
+                        <p><strong>Languages:</strong> Japanese</p>
+                        <p><strong>Currency:</strong> Japanese Yen</p>
+                        <p><strong>Time Zone:</strong> UTC+9</p>
+                        <p><strong>Calling Code:</strong> +81</p>
+                        <p><strong>UNESCO Sites:</strong> 17</p>
+                    </div>
+                </section>
+
+                <section class="weather-section card">
+                    <h2>Weather</h2>
+                    <div class="weather-icon-mobile">
+                        <img src="images/weather-icon.svg" alt="Partly cloudy" class="svg-icon">
+                    </div>
+                    <div class="weather-content">
+                        <p><strong>Temperature:</strong> <span id="temp">10</span>°C</p>
+                        <p><strong>Conditions:</strong> Partly Cloudy</p>
+                        <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
+                        <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌸 Afotey Clement Nii Odai 🌸 Kyoto, Japan</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
