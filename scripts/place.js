@@ -3,9 +3,7 @@ const temperature = 18; // in Celsius
 const windSpeed = 8; // in km/h
 
 // Function to calculate wind chill factor
-function calculateWindChill(temp, wind) {
-    return 13.12 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16);
-}
+const calculateWindChill = (temp, wind) => 13.12 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16);
 
 // Update footer with current year
 document.getElementById('currentyear').textContent = new Date().getFullYear();
