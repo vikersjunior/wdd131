@@ -1,0 +1,75 @@
+/* Larger View - Tablet and Desktop */
+@media (min-width: 768px) {
+    
+    /* Header adjustments */
+    header {
+        padding: 1.5rem 2rem;
+    }
+    
+    header h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* Hide hamburger button on larger screens */
+    #hamburger {
+        display: none;
+    }
+    
+    /* Show navigation horizontally */
+    nav {
+        position: static;
+        display: block;
+        width: auto;
+        background-color: transparent;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        gap: 0;
+    }
+    
+    nav ul li {
+        border-top: none;
+    }
+    
+    nav ul li a {
+        padding: 0.4rem 1.5rem;
+        border-radius: 3rem;
+    }
+    
+    nav ul li a:hover,
+    nav ul li a.active {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+    
+    /* Grid Layout - 2 columns for tablets */
+    #temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    /* Main heading larger */
+    main h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Figure image larger */
+    figure img {
+        height: 250px;
+    }
+}
+
+/* Desktop - 3 columns */
+@media (min-width: 1024px) {
+    
+    /* Grid Layout - 3 columns */
+    #temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    main {
+        padding: 0 2rem;
+    }
+}

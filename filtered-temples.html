@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Clement Nii Odai Afotey">
+    <meta name="description" content="Filtered Temple Album page for WDD 131 – Dynamic Web Fundamentals by Clement Nii Odai Afotey. A collection of temples with interactive filters.">
+    <title>WDD 131 – Filtered Temples – Clement Nii Odai Afotey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Temple Album</h2>
+        <button id="hamburger" type="button" aria-label="Toggle menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="filtered-temples.html" class="active" data-filter="home">Home</a></li>
+                <li><a href="filtered-temples.html#old" data-filter="old">Old</a></li>
+                <li><a href="filtered-temples.html#new" data-filter="new">New</a></li>
+                <li><a href="filtered-temples.html#large" data-filter="large">Large</a></li>
+                <li><a href="filtered-temples.html#small" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div id="temple-grid">
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🌺 Clement Nii Odai Afotey 🌺 Ghana</p>
+        <p id="lastModified"></p>
+    </footer>   
+</body>
+</html>
