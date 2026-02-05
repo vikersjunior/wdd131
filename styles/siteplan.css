@@ -1,0 +1,476 @@
+/* ===================================
+   CSS VARIABLES (Custom Properties)
+   =================================== */
+:root {
+    /* Color Schema - Applied throughout document */
+    --color-primary: #FFE608;
+    --color-accent: #000000;
+    --color-background: #FFFFFF;
+    --color-text: #000000;
+    --color-white: #FFFFFF;
+    --color-gray: #F5F5F5;
+    --color-border: #E0E0E0;
+    --color-hover: #FFD700;
+    
+    /* Typography */
+    --font-heading: 'Syne', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Spacing Scale */
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================================
+   RESET & BASE STYLES
+   =================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.7;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===================================
+   HEADER
+   =================================== */
+.site-header {
+    background: var(--color-accent);
+    color: var(--color-primary);
+    padding: var(--space-2xl) var(--space-lg);
+    box-shadow: var(--shadow-lg);
+    border-bottom: 4px solid var(--color-primary);
+}
+
+.brand {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.kicker {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.9;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+}
+
+.site-header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.subhead {
+    font-size: 1.125rem;
+    opacity: 0.95;
+    margin-top: var(--space-xs);
+    font-weight: 400;
+}
+
+/* ===================================
+   MAIN CONTAINER
+   =================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-2xl) var(--space-lg);
+}
+
+/* ===================================
+   CARD SECTIONS
+   =================================== */
+.card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-xl);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+}
+
+.card h2 {
+    font-family: var(--font-heading);
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+}
+
+.card h4 {
+    font-family: var(--font-heading);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+}
+
+.card p {
+    margin-bottom: var(--space-md);
+    line-height: 1.8;
+}
+
+.card ul, .card ol {
+    margin-left: var(--space-xl);
+    margin-bottom: var(--space-md);
+}
+
+.card li {
+    margin-bottom: var(--space-sm);
+    line-height: 1.7;
+}
+
+.card strong {
+    font-weight: 600;
+    color: var(--color-accent);
+}
+
+.card em {
+    color: var(--color-text);
+    font-style: italic;
+    font-weight: 500;
+}
+
+code {
+    background: var(--color-gray);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+    font-size: 0.9em;
+    color: var(--color-accent);
+    border: 1px solid var(--color-border);
+}
+
+/* ===================================
+   SITE NAME SECTION
+   =================================== */
+.brand-name {
+    font-size: 2.25rem;
+    color: var(--color-accent);
+    font-weight: 700;
+    margin-bottom: var(--space-lg);
+    text-align: center;
+    padding: var(--space-md);
+    background: linear-gradient(135deg, rgba(255, 230, 8, 0.15) 0%, rgba(255, 230, 8, 0.05) 100%);
+    border-radius: var(--radius-md);
+    border: 2px solid var(--color-primary);
+}
+
+/* ===================================
+   SCENARIOS SECTION
+   =================================== */
+.scenario-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.scenario-item {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+    background: var(--color-gray);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--color-primary);
+}
+
+.scenario-number {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    background: var(--color-primary);
+    color: var(--color-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    border: 2px solid var(--color-accent);
+}
+
+.scenario-question {
+    font-size: 1.0625rem;
+    font-style: italic;
+    color: var(--color-text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ===================================
+   COLOR SCHEMA SECTION
+   =================================== */
+.color-swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.color-swatch {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+    background: var(--color-gray);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+}
+
+.color-chip {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+    border: 2px solid var(--color-white);
+}
+
+.chip-primary {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-accent);
+}
+
+.chip-accent {
+    background-color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+}
+
+.chip-background {
+    background-color: var(--color-background);
+    border: 2px solid var(--color-border);
+}
+
+.chip-gray {
+    background-color: var(--color-gray);
+    border: 2px solid var(--color-border);
+}
+
+.color-info h4 {
+    font-size: 1rem;
+    margin-bottom: var(--space-xs);
+    color: var(--color-text);
+}
+
+.color-code {
+    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+    font-size: 0.875rem;
+    color: var(--color-accent);
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+.color-usage {
+    font-size: 0.9375rem;
+    color: var(--color-text);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ===================================
+   TYPOGRAPHY SECTION
+   =================================== */
+.type-examples {
+    display: grid;
+    gap: var(--space-xl);
+    margin-top: var(--space-lg);
+}
+
+.type-card {
+    background: var(--color-gray);
+    padding: var(--space-xl);
+    border-radius: var(--radius-md);
+    border: 2px solid var(--color-border);
+}
+
+.type-header {
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
+    border-bottom: 2px solid var(--color-border);
+}
+
+.type-header h4 {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    margin-bottom: var(--space-xs);
+    font-weight: 700;
+}
+
+.type-meta {
+    font-size: 0.9375rem;
+    color: var(--color-text);
+    opacity: 0.8;
+    margin: 0;
+}
+
+.type-usage {
+    margin-bottom: var(--space-lg);
+    font-size: 0.9375rem;
+}
+
+.type-sample {
+    background: var(--color-white);
+    padding: var(--space-lg);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+    margin-bottom: var(--space-md);
+}
+
+.heading-sample {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.3;
+}
+
+.body-sample {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-text);
+    line-height: 1.7;
+}
+
+.type-alphabet {
+    font-size: 1.25rem;
+}
+
+/* ===================================
+   WIREFRAMES SECTION
+   =================================== */
+.wireframe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-2xl);
+    margin-top: var(--space-xl);
+}
+
+.wireframe-box h3 {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+    font-size: 1.25rem;
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+.wireframe-image {
+    background: var(--color-gray);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.wireframe-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-sm);
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+.site-footer {
+    background: var(--color-text);
+    color: var(--color-white);
+    text-align: center;
+    padding: var(--space-xl) var(--space-lg);
+    margin-top: var(--space-3xl);
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 0.9375rem;
+    opacity: 0.9;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+@media (max-width: 768px) {
+    .site-header h1 {
+        font-size: 2rem;
+    }
+    
+    .subhead {
+        font-size: 1rem;
+    }
+    
+    .container {
+        padding: var(--space-lg) var(--space-md);
+    }
+    
+    .card {
+        padding: var(--space-lg);
+    }
+    
+    .card h2 {
+        font-size: 1.5rem;
+    }
+    
+    .wireframe-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .color-swatches {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header {
+        padding: var(--space-xl) var(--space-md);
+    }
+    
+    .site-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .card h2 {
+        font-size: 1.375rem;
+    }
+    
+    .wireframe-container {
+        gap: var(--space-xl);
+    }
+}
