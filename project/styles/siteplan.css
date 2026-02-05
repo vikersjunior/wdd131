@@ -1,6 +1,3 @@
-/* ===================================
-   CSS VARIABLES (Custom Properties)
-   =================================== */
 :root {
     /* Color Schema - Applied throughout document */
     --color-primary: #FFE608;
@@ -285,10 +282,11 @@ code {
     border: 2px solid var(--color-border);
 }
 
-.color-info h4 {
+.color-info h3 {
     font-size: 1rem;
     margin-bottom: var(--space-xs);
     color: var(--color-text);
+    font-weight: 600;
 }
 
 .color-code {
@@ -328,7 +326,7 @@ code {
     border-bottom: 2px solid var(--color-border);
 }
 
-.type-header h4 {
+.type-header h3 {
     font-size: 1.5rem;
     color: var(--color-accent);
     margin-bottom: var(--space-xs);
