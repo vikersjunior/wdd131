@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Clement Nii Odai Afotey">
+    <meta name="description" content="WDD 131 Product Review Form - Submit your product review and share your experience. Dynamic Web Fundamentals coursework by Clement Nii Odai Afotey">
+    <title>WDD 131 – Product Review Form – Clement Nii Odai Afotey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header class="page-header">
+            <h1 class="page-title">Product Review</h1>
+            <p class="page-subtitle">Share your honest experience with us</p>
+        </header>
+
+        <form id="reviewForm" class="review-form" method="get" action="review.html">
+            
+            <!-- Product Name -->
+            <div class="form-group">
+                <label for="productName" class="form-label">
+                    Product Name
+                    <span class="required-indicator" aria-label="required">*</span>
+                </label>
+                <select id="productName" name="productName" class="form-select" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <!-- Overall Rating -->
+            <fieldset class="form-group">
+                <legend class="form-label">
+                    Overall Rating
+                    <span class="required-indicator" aria-label="required">*</span>
+                </legend>
+                <div class="stars">
+                    <input type="radio" id="rating5" name="rating" value="5" required>
+                    <label for="rating5"></label>
+                    
+                    <input type="radio" id="rating4" name="rating" value="4">
+                    <label for="rating4"></label>
+                    
+                    <input type="radio" id="rating3" name="rating" value="3">
+                    <label for="rating3"></label>
+                    
+                    <input type="radio" id="rating2" name="rating" value="2">
+                    <label for="rating2"></label>
+                    
+                    <input type="radio" id="rating1" name="rating" value="1">
+                    <label for="rating1"></label>
+                </div>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <div class="form-group">
+                <label for="installDate" class="form-label">
+                    Date of Installation
+                    <span class="required-indicator" aria-label="required">*</span>
+                </label>
+                <input type="date" id="installDate" name="installDate" class="form-input" required>
+            </div>
+
+            <!-- Useful Features -->
+            <fieldset class="form-group">
+                <legend class="form-label">
+                    Which features did you find useful in the product?
+                    <span class="form-hint">(Check all that apply)</span>
+                </legend>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="featureDurability" name="features" value="Durability">
+                        <label for="featureDurability" class="checkbox-label">Durability</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="featureEase" name="features" value="Ease of Use">
+                        <label for="featureEase" class="checkbox-label">Ease of Use</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="featurePerformance" name="features" value="Performance">
+                        <label for="featurePerformance" class="checkbox-label">Performance</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="featureDesign" name="features" value="Design">
+                        <label for="featureDesign" class="checkbox-label">Design</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Written Review -->
+            <div class="form-group">
+                <label for="writtenReview" class="form-label">
+                    Written Review
+                    <span class="form-hint">(Optional)</span>
+                </label>
+                <textarea id="writtenReview" name="writtenReview" class="form-textarea" rows="6" placeholder="Share your detailed experience with this product..."></textarea>
+            </div>
+
+            <!-- User Name -->
+            <div class="form-group">
+                <label for="userName" class="form-label">
+                    Your Name
+                    <span class="form-hint">(Optional)</span>
+                </label>
+                <input type="text" id="userName" name="userName" class="form-input" placeholder="Enter your name">
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Submit Review</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+            </div>
+
+        </form>
+
+        <footer class="page-footer">
+            <p>&copy;2026 🌺 Clement Nii Odai Afotey 🌺 Ghana</p>
+            <p class="last-modified">Last Modification: <time datetime="2024-02-26T13:56:10">02/26/2024 13:56:10</time></p>
+        </footer>
+    </main>
+</body>
+</html>

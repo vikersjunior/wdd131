@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Clement Nii Odai Afotey">
+    <meta name="description" content="WDD 131 Review Submitted - Thank you for submitting your product review. Dynamic Web Fundamentals coursework by Clement Nii Odai Afotey">
+    <title>WDD 131 – Review Submitted – Clement Nii Odai Afotey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/review.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <div class="success-card">
+            <div class="success-icon">
+                <svg viewBox="0 0 52 52" class="checkmark">
+                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+            </div>
+            
+            <h1 class="success-title">Review Submitted!</h1>
+            <p class="success-message">Thank you for sharing your feedback with us.</p>
+            
+            <div class="review-summary">
+                <h2 class="summary-title">Your Review Details</h2>
+                <div id="reviewDetails" class="review-details">
+                    <!-- Review details will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="review-counter">
+                <p class="counter-label">Total Reviews Completed</p>
+                <p class="counter-number" id="reviewCount">0</p>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="form.html" class="btn btn-primary">Submit Another Review</a>
+                <button onclick="window.print()" class="btn btn-secondary">Print Summary</button>
+            </div>
+        </div>
+
+        <footer class="page-footer">
+            <p>&copy;2026 🌺 Clement Nii Odai Afotey 🌺 Ghana</p>
+            <p class="last-modified">Last Modification: <time datetime="2024-02-26T13:56:10">02/26/2024 13:56:10</time></p>
+        </footer>
+    </main>
+</body>
+</html>
