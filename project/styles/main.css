@@ -139,6 +139,18 @@ button {
     margin-top: var(--space-xl);
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .text-on-light { color: var(--text-on-light); }
 .text-on-dark { color: var(--text-on-dark); }
 .text-on-primary { color: var(--text-on-primary); }
