@@ -8,8 +8,9 @@
     --color-background: #FFFFFF;
     --color-supporting: #F5F5F5;
     --color-gray-light: #E0E0E0;
-    --color-gray-medium: #666666; /* Improved from #999999 for better contrast */
+    --color-gray-medium: #4D4D4D; /* Darkened to support stricter contrast targets (including AAA on light backgrounds) */
     --color-error: #D32F2F;
+    --color-required: #8B0000;
     --color-success: #2E7D32;
     
     /* Yellow Variants */
@@ -229,7 +230,7 @@ fieldset .form-label {
 }
 
 .required-indicator {
-    color: var(--color-primary);
+    color: var(--color-required);
     font-weight: 700;
     margin-left: 0.25rem;
 }
