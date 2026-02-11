@@ -227,6 +227,10 @@ button {
     box-shadow: none;
 }
 
+.main-nav.nav-overlay.nav-transparent .nav-menu a {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
 .nav-container {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -420,8 +424,12 @@ button {
 
 .footer-col ul a.active,
 .footer-links a.active {
-    color: var(--color-primary);
+    color: var(--color-white);
     font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
 }
 
 .social-links {

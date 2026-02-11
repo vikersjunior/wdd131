@@ -2,7 +2,7 @@
 
 .page-hero {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+        linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)),
         url("../images/nutrition.webp");
     background-size: cover;
     background-position: center 30%;
@@ -12,13 +12,20 @@
     text-align: center;
 }
 
-.page-hero .section-label,
+.page-hero .section-label {
+    display: inline-block;
+    background: var(--color-primary);
+    color: var(--color-accent);
+    padding: 0.2rem 0.7rem;
+    border-radius: 999px;
+}
+
 .page-hero h1 {
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .page-hero .section-intro {
-    color: var(--color-gray-light);
+    color: var(--color-white);
 }
 
 .nutrition-basics {

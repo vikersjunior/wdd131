@@ -59,7 +59,7 @@
 .hero .btn-secondary {
     color: var(--color-white);
     border-color: var(--color-white);
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(0, 0, 0, 0.55);
 }
 
 .hero .btn-secondary:hover {
@@ -398,6 +398,19 @@
 @media (max-width: 768px) {
     .hero-buttons {
         flex-direction: column;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .stat-item {
+        padding: var(--space-sm) 0;
+    }
+
+    .stat-number {
+        font-size: clamp(2rem, 10vw, 2.75rem);
     }
     
     .tools-grid,
