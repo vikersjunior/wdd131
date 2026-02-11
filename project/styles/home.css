@@ -56,6 +56,10 @@
     flex-wrap: wrap;
 }
 
+.hero .btn {
+    padding: var(--space-xs) var(--space-sm);
+}
+
 .hero .btn-secondary {
     color: var(--color-white);
     border-color: var(--color-white);

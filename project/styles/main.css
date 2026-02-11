@@ -2,8 +2,8 @@
    CSS VARIABLES
    ======================================== */
 :root {
-    /* Colors - Yellow & Black Theme */
-    --color-primary: #FFE608;
+    /* Colors - Green & Black Theme */
+    --color-primary: #00FF4E;
     --color-accent: #000000;
     --color-white: #FFFFFF;
     --color-gray-light: #F5F5F5;
@@ -228,7 +228,7 @@ button {
 }
 
 .main-nav.nav-overlay.nav-transparent .nav-menu a {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: transparent;
 }
 
 .nav-container {
@@ -288,7 +288,8 @@ button {
 }
 
 .nav-menu a {
-    color: var(--text-on-dark);
+    color: rgba(255, 255, 255, 0.82);
+    background-color: transparent;
     font-weight: 600;
     padding: var(--space-xs) var(--space-sm);
     border-radius: var(--radius-sm);
@@ -297,14 +298,14 @@ button {
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    background-color: var(--color-primary);
-    color: var(--text-on-primary);
+    background-color: transparent;
+    color: var(--color-white);
 }
 
 .cta-btn {
     background-color: var(--color-primary);
     color: var(--text-on-primary);
-    padding: 0.75rem 1.5rem;
+    padding: var(--space-xs) var(--space-sm);
     border-radius: var(--radius-sm);
     font-family: var(--font-heading);
     font-weight: 700;
