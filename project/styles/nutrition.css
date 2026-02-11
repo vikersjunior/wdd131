@@ -1,0 +1,89 @@
+/* NUTRITION PAGE */
+
+.page-hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+        url("../images/nutrition.webp");
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    color: var(--color-white);
+    padding: var(--space-3xl) 0 var(--space-2xl);
+    text-align: center;
+}
+
+.page-hero .section-label,
+.page-hero h1 {
+    color: var(--color-primary);
+}
+
+.page-hero .section-intro {
+    color: var(--color-gray-light);
+}
+
+.nutrition-basics {
+    padding: var(--space-2xl) 0;
+}
+
+.basics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-md);
+}
+
+.basic-card {
+    border: 2px solid var(--color-gray-medium);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    background: var(--color-white);
+}
+
+.basic-card h2 {
+    margin-bottom: var(--space-sm);
+}
+
+.basic-card ul {
+    list-style: disc;
+    margin-left: var(--space-lg);
+}
+
+.water-form {
+    margin-top: var(--space-md);
+}
+
+.tool-result {
+    margin-top: var(--space-sm);
+    padding: var(--space-sm);
+    border-radius: var(--radius-sm);
+    background: var(--color-gray-light);
+    display: none;
+}
+
+.tool-result.show {
+    display: block;
+}
+
+.meal-tool {
+    background: var(--color-gray-light);
+    padding: var(--space-3xl) 0;
+    text-align: center;
+}
+
+.meal-tool-card {
+    max-width: 680px;
+    margin: 0 auto;
+    background: var(--color-white);
+    border: 2px solid var(--color-gray-medium);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+}
+
+.meal-result {
+    margin-top: var(--space-md);
+    text-align: left;
+}
+
+.meal-result ul {
+    list-style: disc;
+    margin-left: var(--space-lg);
+}

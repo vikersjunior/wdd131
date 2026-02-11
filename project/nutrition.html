@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Clement Nii Odai Afotey">
+    <meta name="description" content="Beginner nutrition guidance and practical meal planning tools by FitStart.">
+    <title>Nutrition Guide | FitStart Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/nutrition.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/nutrition.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav" id="mainNav">
+            <div class="nav-container">
+                <a href="index.html" class="logo"><span class="logo-text">FitStart</span></a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="workouts.html">Workouts</a></li>
+                    <li><a href="plan.html">Weekly Plan</a></li>
+                    <li><a href="nutrition.html" class="active">Nutrition</a></li>
+                </ul>
+                <a href="#mealTool" class="cta-btn">Build Meal</a>
+            </div>
+        </nav>
+
+        <section class="page-hero">
+            <div class="container">
+                <p class="section-label">Nutrition Guide</p>
+                <h1>Simple Nutrition for Real Progress</h1>
+                <p class="section-intro">Learn practical eating habits for energy, recovery, and consistency without complicated diet rules.</p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="nutrition-basics">
+            <div class="container basics-grid">
+                <article class="basic-card">
+                    <h2>Balanced Plate</h2>
+                    <p>Use this beginner ratio for most meals:</p>
+                    <ul>
+                        <li>1/2 plate vegetables and fruit</li>
+                        <li>1/4 plate lean protein</li>
+                        <li>1/4 plate quality carbs</li>
+                        <li>Add healthy fats in small amounts</li>
+                    </ul>
+                </article>
+                <article class="basic-card">
+                    <h2>Hydration Target</h2>
+                    <p>Water goal depends on your body weight and activity level.</p>
+                    <form id="waterForm" class="water-form">
+                        <div class="form-group">
+                            <label for="bodyWeight">Body Weight (kg)</label>
+                            <input id="bodyWeight" name="bodyWeight" type="number" min="35" max="220" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="activityLevel">Activity Level</label>
+                            <select id="activityLevel" name="activityLevel" required>
+                                <option value="">Select level...</option>
+                                <option value="1.0">Light</option>
+                                <option value="1.15">Moderate</option>
+                                <option value="1.3">High</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Calculate Water</button>
+                    </form>
+                    <div id="waterResult" class="tool-result"></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="meal-tool" id="mealTool">
+            <div class="container">
+                <h2>Quick Meal Builder</h2>
+                <p class="section-intro">Generate a simple meal idea using lean protein, complex carbs, and vegetables.</p>
+                <div class="meal-tool-card">
+                    <button id="generateMeal" type="button" class="btn btn-primary">Generate Meal Idea</button>
+                    <div id="mealResult" class="meal-result">
+                        <p>Click the button to get a balanced meal suggestion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>FitStart</h3>
+                    <p>Your beginner-friendly fitness companion. Start your journey today with simple workouts and smart planning.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="workouts.html">Workouts</a></li>
+                        <li><a href="plan.html">Weekly Plan</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Contact</h4>
+                    <p>support@fitstart.com</p>
+                    <p>+233 542717127</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FitStart Planner. Created by Clement Nii Odai Afotey for WDD 131.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Clement Nii Odai Afotey">
+    <meta name="description" content="FitStart workout library with beginner-friendly routines you can filter by goal and level.">
+    <title>Workout Library | FitStart Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/workouts.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/workouts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav" id="mainNav">
+            <div class="nav-container">
+                <a href="index.html" class="logo"><span class="logo-text">FitStart</span></a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="workouts.html" class="active">Workouts</a></li>
+                    <li><a href="plan.html">Weekly Plan</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                </ul>
+                <a href="plan.html" class="cta-btn">Build Plan</a>
+            </div>
+        </nav>
+
+        <section class="page-hero">
+            <div class="container">
+                <p class="section-label">Workout Library</p>
+                <h1>Choose a Routine That Fits Your Goal</h1>
+                <p class="section-intro">Browse beginner-safe workouts and filter by focus area, fitness level, and keywords.</p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <div class="container">
+                <form class="filter-form" id="workoutFilterForm">
+                    <div class="filter-field">
+                        <label for="goalFilter">Goal</label>
+                        <select id="goalFilter" name="goal">
+                            <option value="all">All Goals</option>
+                            <option value="weight-loss">Weight Loss</option>
+                            <option value="strength">Strength</option>
+                            <option value="mobility">Mobility</option>
+                            <option value="endurance">Endurance</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-field">
+                        <label for="levelFilter">Level</label>
+                        <select id="levelFilter" name="level">
+                            <option value="all">All Levels</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="easy">Easy</option>
+                            <option value="intermediate">Intermediate</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-field">
+                        <label for="searchFilter">Search</label>
+                        <input id="searchFilter" name="search" type="text" placeholder="e.g. cardio, core, bodyweight">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="library-section">
+            <div class="container">
+                <div class="results-bar">
+                    <h2>Available Workouts</h2>
+                    <p id="resultCount">0 routines found</p>
+                </div>
+                <div class="workout-library" id="workoutLibrary"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>FitStart</h3>
+                    <p>Your beginner-friendly fitness companion. Start your journey today with simple workouts and smart planning.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="workouts.html">Workouts</a></li>
+                        <li><a href="plan.html">Weekly Plan</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Contact</h4>
+                    <p>support@fitstart.com</p>
+                    <p>+233 542717127</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FitStart Planner. Created by Clement Nii Odai Afotey for WDD 131.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
